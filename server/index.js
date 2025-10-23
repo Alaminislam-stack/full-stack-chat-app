@@ -38,9 +38,6 @@ io.sockets.setMaxListeners(20);
 connectDB()
 
 // Sample route
-app.get("/", (req, res) => {
-  res.sendFile("index.html");
-});
 
 const userScoketMap = {
   // userId: socketId
