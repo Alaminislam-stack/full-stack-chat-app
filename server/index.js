@@ -38,6 +38,9 @@ io.sockets.setMaxListeners(20);
 connectDB()
 
 // Sample route
+app.get("/", (req, res) => {
+  res.send("API is running...");
+});
 
 const userScoketMap = {
   // userId: socketId
