@@ -18,7 +18,7 @@ const CLIENT_URL = process.env.FRONTEND_URL
 
 app.use(
   cors({
-  origin: ['https://full-stack-chat-app-78cd.vercel.app'],
+  origin: [CLIENT_URL],
   credentials: true,
 })
 )
@@ -29,7 +29,7 @@ app.use(express.static("./public"));
 app.use(cookieParser());
 export const io = new Server(server,{
   cors:{
-    origin: ['https://full-stack-chat-app-78cd.vercel.app'],
+    origin: [CLIENT_URL],
   }
 });
 
